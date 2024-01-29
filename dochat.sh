@@ -31,7 +31,7 @@ DEFAULT_WECHAT_VERSION=3.3.0.115
 #
 # Get the image version tag from the env
 #
-DOCHAT_IMAGE_VERSION="zixia/wechat:${DOCHAT_WECHAT_VERSION:-${DEFAULT_WECHAT_VERSION}}"
+DOCHAT_IMAGE_VERSION="jichenssg/wechat:${DOCHAT_WECHAT_VERSION:-${DEFAULT_WECHAT_VERSION}}"
 
 function hello () {
   cat <<'EOF'

@@ -27,12 +27,7 @@ We have received reports from our user said that their WeChat account has been d
 WeChat PC will be started on your Linux desktop by running the following one-line command:
 
 ```sh
-curl -sL https://raw.githubusercontent.com/huan/docker-wechat/master/dochat.sh | bash
-```
-
-If you’re in China, try the following one-line command if the above one-line command does not work well:
-```sh
-curl -sL https://gitee.com/mirrors/dochat/raw/main/dochat.sh | bash
+curl -sL https://raw.githubusercontent.com/jichenssg/docker-wechat/master/dochat.sh | bash
 ```
 
 Just copy/paste the above one-line command to your terminal and press Enter. Then the WeChat PC should appear in your XWindows desktop shortly.
