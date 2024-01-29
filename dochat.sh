@@ -31,7 +31,7 @@ DEFAULT_WECHAT_VERSION=3.3.0.115
 #
 # Get the image version tag from the env
 #
-DOCHAT_IMAGE_VERSION="jichenssg/wechat:${DOCHAT_WECHAT_VERSION:-${DEFAULT_WECHAT_VERSION}}"
+DOCHAT_IMAGE_VERSION="zixia/wechat:${DOCHAT_WECHAT_VERSION:-${DEFAULT_WECHAT_VERSION}}"
 
 function hello () {
   cat <<'EOF'
@@ -73,7 +73,7 @@ function pullUpdate () {
 
   echo '🚀 Pulling the docker image...'
   echo
-  docker pull "$DOCHAT_IMAGE_VERSION"
+  docker pull jichenssg/wechat
   echo
   echo '🚀 Pulling the docker image done.'
 }
@@ -135,7 +135,7 @@ function main () {
     --privileged \
     --add-host dldir1.qq.com:127.0.0.1 \
     \
-    "$DOCHAT_IMAGE_VERSION"
+    --entrypoint ./entrypoint.sh jichenssg/wechat
 
     #
     # Do not put any command between
