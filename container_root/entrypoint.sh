@@ -35,6 +35,7 @@ function setupFontDpi () {
 function startWechat () {
 
   hello
+  sudo rm /usr/lib/i386-linux-gnu/libGL.so.1 && echo "rm" || echo "already done"
   setupFontDpi
 
   /dochat/patch-hosts.sh

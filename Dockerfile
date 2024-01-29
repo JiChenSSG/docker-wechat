@@ -1,3 +1,5 @@
+# Modified by jichen jichenssg@gmail.com
+
 FROM zixia/wine:6.0
 
 USER root
