@@ -110,7 +110,6 @@ function main () {
   docker run \
     "${DEVICE_ARG[@]}" \
     --name DoChat \
-    --rm \
     -i \
     \
     -v "$HOST_DIR_HOME_DOCHAT_WECHAT_FILES":'/home/user/WeChat Files/' \
@@ -135,7 +134,7 @@ function main () {
     --privileged \
     --add-host dldir1.qq.com:127.0.0.1 \
     \
-    --entrypoint ./entrypoint.sh jichenssg/wechat
+    jichenssg/wechat
 
     #
     # Do not put any command between
